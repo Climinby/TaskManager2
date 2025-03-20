@@ -5,16 +5,6 @@ plugins {
 group = "com.climinby.aqiiv"
 version = "2.0.1"
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-}
-
-subprojects {
-    apply(plugin = "java")
-}
-
 repositories {
     mavenCentral()
 }
