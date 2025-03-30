@@ -1,0 +1,12 @@
+{
+  "ui.settings.language": "言語",
+  "ui.settings.reminder": "備忘",
+  "ui.settings.config": "設定",
+  "ui.tasks.create": "追加し",
+  "ui.tasks.enter.title": "事件を入力してください...",
+  "ui.tasks.enter.desc": "タスクを説明してください...",
+  "ui.tasks.save": "保存する",
+  "ui.tasks.cancel": "取り消す",
+  "ui.tasks.new_task": "新しいタスク",
+  "ui.tasks.delete": "Delete"
+}

@@ -1,0 +1,12 @@
+{
+  "ui.settings.language": "Language",
+  "ui.settings.reminder": "Reminder",
+  "ui.settings.config": "Config",
+  "ui.tasks.create": "ADD",
+  "ui.tasks.enter.title": "Enter a title...",
+  "ui.tasks.enter.desc": "Describe your task...",
+  "ui.tasks.save": "Save",
+  "ui.tasks.cancel": "Cancel",
+  "ui.tasks.new_task": "New Task",
+  "ui.tasks.delete": "Delete"
+}

@@ -1,0 +1,12 @@
+{
+  "ui.settings.language": "语言",
+  "ui.settings.reminder": "提示",
+  "ui.settings.config": "配置",
+  "ui.tasks.create": "新建",
+  "ui.tasks.enter.title": "请输入标题...",
+  "ui.tasks.enter.desc": "输入任务描述...",
+  "ui.tasks.save": "保存",
+  "ui.tasks.cancel": "取消",
+  "ui.tasks.new_task": "新任务",
+  "ui.tasks.delete": "删除任务"
+}
