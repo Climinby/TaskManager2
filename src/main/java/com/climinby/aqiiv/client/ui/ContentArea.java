@@ -118,6 +118,20 @@ public class ContentArea {
         SequentialTransition transition = new SequentialTransition(moveOut, moveIn);
 
         transition.play();
+//        TranslateTransition moveOut = new TranslateTransition(Duration.millis(200), this.mainBox);
+//        moveOut.setFromX(0);
+//        moveOut.setFromX(-800);
+//        moveOut.setOnFinished(event -> {
+//            this.mainBox.getChildren().set(0, newBox);
+//        });
+//
+//        TranslateTransition moveIn = new TranslateTransition(Duration.millis(200), this.mainBox);
+//        moveIn.setFromX(800);
+//        moveIn.setToX(0);
+//
+//        SequentialTransition transition = new SequentialTransition(moveOut, moveIn);
+//
+//        transition.play();
     }
 
     private void updateTask(Task newTask) {
@@ -818,9 +832,9 @@ public class ContentArea {
         content.setMaxSize(800, 400);
         content.setAlignment(Pos.CENTER_LEFT);
 
-        VBox contentBox = new VBox();
-        contentBox.setAlignment(Pos.CENTER_LEFT);
-        contentBox.setMaxSize(300, 400);
+//        VBox contentBox = new VBox();
+//        contentBox.setAlignment(Pos.CENTER_LEFT);
+//        contentBox.setMaxSize(300, 400);
 //        content.getChildren().add(contentBox);
 
         //the sidePane area
@@ -843,12 +857,14 @@ public class ContentArea {
         scrollChildBoard.setFitToWidth(true);
         scrollChildBoard.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollChildBoard.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        sidePane.getChildren().addAll(scrollChildBoard);
 
         //the main pane area
         StackPane mainPane = new StackPane();
         mainPane.setStyle("-fx-background-color: #e3f4f8; -fx-background-radius: 0 0 10 10;");
         mainPane.setMaxSize(640, 400);
         mainPane.setTranslateX(160);
+        content.getChildren().addAll(mainPane, sidePane);
 
         ScrollPane scrollMainBoard = new ScrollPane();
         scrollMainBoard.setFitToWidth(true);
@@ -877,10 +893,10 @@ public class ContentArea {
         }
         ((ToggleButton) ((StackPane) status.box.getChildren().get(index)).getChildren().getLast()).fire();
 
-        sidePane.getChildren().addAll(scrollChildBoard);
+//        sidePane.getChildren().addAll(scrollChildBoard);
         this.sideColumn = sidePane;
 
-        content.getChildren().addAll(mainPane, sidePane);
+//        content.getChildren().addAll(mainPane, sidePane);
 
         return content;
     }
@@ -1018,8 +1034,8 @@ public class ContentArea {
                 VBox settingsBox = new VBox(40);
                 settingsBox.setTranslateY(0);
                 settingsBox.setTranslateX(20);
-//                settingsBox.setMinHeight(400);
-                settingsBox.setPadding(new Insets(94, 0, 93, 0));
+                settingsBox.setMinHeight(390);
+                settingsBox.setPadding(new Insets(90, 0, 90, 0));
                 settingsBox.setAlignment(Pos.CENTER);
 
                 for(int i = 0; i < 3; i++) {
